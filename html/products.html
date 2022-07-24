@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products-Fitmeals</title> 
+    <link rel="icon" href="https://www.fitmeals.co.in/wp-content/uploads/2019/06/icon.png">
+    <script
+      src="https://kit.fontawesome.com/e9a5a74c45.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+
+    <style>  
+
+    
+
+    *{
+      font-family: sans-serif;
+    }
+
+        #product_head{
+            width: 100%;
+            height: 350px;
+            font-size: 30px;
+            font-weight: bold;
+            color: white; 
+             background-color: 
+#292d35;  
+             
+            text-align: center; 
+            margin-top: -25px;  
+            
+        } 
+        #product_head>h1{
+            padding-top: 150px;
+            font-family:sans-serif;  
+            font-size: 48px;
+            
+        }  
+
+        a{
+          text-decoration: none; 
+          font-size: 16px; 
+          line-height: 30px; 
+          color: black;
+          font-weight: 700;
+          font-family: sans-serif;
+        }  
+        a:hover{
+          color: #8ec038;
+          cursor: pointer;
+        }
+        #Innerside_box{
+          margin-left: 20px;
+        } 
+        #side_box >i{
+          color:#8ec038 ; 
+          padding-right: 5px;
+        } 
+        #Innerside_box >i{
+          color:#8ec038 ; 
+          padding-right: 5px;
+        } 
+        #side_box{
+          height: 400px;
+          width: 30%; 
+          margin-left: 10%;
+          
+          
+          
+        } 
+        #line{
+          width: 100%;
+          background-color: #8ec038;
+          height: 2px;
+          margin-top: -10px;
+        } 
+        #side_box >h1{
+          font-family: sans-serif;
+          font-size: 26px;
+          margin-top: 15%;
+
+        } 
+        hr{
+          background-color: rgb(226, 218, 218);
+          height: 1px;
+          border: none;
+        } 
+
+        #inputs{
+          height: 55px;
+          width: 22%;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+          margin-left: 10%;
+          margin-top: 5%; 
+          border: 2px solid  rgb(243, 237, 237);
+          box-sizing: border-box;
+         
+        } 
+        input{
+         
+         margin-top: 15px; 
+          padding-left: 30px;
+          font-size: 16px;
+          border: none;
+        } 
+        #submit{
+          font-size: 20px; 
+          border: none; 
+          margin-left: 25px;
+      
+          
+        }  
+        #submit>i:hover{
+          cursor: pointer;
+          color: #8ec038;
+        } 
+        #sortdiv{ 
+          height: 58px;
+          width: 42%;
+          border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; 
+          border: 1px solid black; 
+          margin-top: 5%; 
+          margin-left: 80px;
+
+        } 
+        #outer_sortdiv{
+          display: flex;
+          
+          
+          
+        } 
+        #div>h1{
+         font-size: 18px;
+         font-family:  sans-serif;
+         font-weight: 400; 
+         margin-left: 25px;
+         margin-top: 18px;
+         color: #46484c;
+        } 
+        #sortdiv{
+          background-color: #f3f5ed; 
+          border: none;
+          display: flex;
+          
+        } 
+        #sort{
+          padding-top: 18px;
+          padding-left: 180px; 
+          
+        } 
+        #sort>select{
+          font-size: 17px;
+          font-family:  sans-serif;
+         font-weight: 400; 
+         text-decoration: none;
+         border: none;
+         background-color: #f3f5ed;
+        } 
+
+        #product_image{
+          height: 40%;
+          width: 80%;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px; 
+        } 
+        #product_image:hover{ 
+
+          -webkit-transform: scale(0.9);
+         -ms-transform: scale(0.9);
+           transform: scale(0.9);
+          transition: 0.5s ease;
+      
+          cursor: pointer;
+        }
+
+        #prod_div{
+          height: 500px;  
+          width: 300px;  
+          margin-bottom: 30px;
+          
+        } 
+        #mainbox{
+          display: flex; 
+          gap: 5%;
+        } 
+       #products{
+         display: grid; 
+         grid-template-columns: repeat(3,1fr); 
+         grid-template-rows: auto;
+         gap: 30px; 
+         margin-top: 30px;
+       } 
+       #reddiv{
+         height: 50px;
+         width: 60%; 
+         box-sizing: border-box;
+         background-color: red; 
+         border-top-left-radius: 30px;
+          border-bottom-left-radius: 30px;
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px; 
+          text-align: center; 
+           padding-top: 15px;
+          font-size: 17px;
+          font-weight: 700; 
+          color: white;
+          font-family: sans-serif ; 
+           margin-left: 20px;
+          
+       } 
+       #reddiv:hover{
+         background-color: #8ec038; 
+         
+       }
+       
+       
+      
+
+
+
+      
+        p{
+          width: 55%;
+          line-height: 22px;
+          font-size: 14px;
+          text-align: center; 
+          margin-left: 30px;
+        } 
+        h3{
+         
+          margin-left: 80px; 
+          color: red;
+
+        } 
+        h2{
+          margin-left: 30px;
+          
+        } 
+        h4{
+          color: #8ec038;
+          margin-left: 75px;
+        } 
+        h4:hover{
+          cursor: pointer; 
+          color: black;
+        } 
+       
+        .fast{
+          margin-left: 20px;
+        }
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus, textarea:focus, select:focus{
+        outline: none;
+    } 
+
+
+
+    /* navbarcss */
+    
+    
+
+
+
+/* onclick second product page */
+#diff_page{
+
+  display: flex;
+ 
+  height: 100px;
+  width: 30%;
+
+  margin-top: 8%;
+  margin-left: 45%;
+} 
+#diff_page>div{
+  width: 15%;
+  background-color:#f3f5ed;
+  height: 60%;
+  margin-left: 15px;
+  margin-top: 10px;
+ border-radius: 50%;
+ font-size: 18px;
+ text-align: center;
+ font-weight: 700;
+ line-height: 60px;
+ 
+
+}
+#diff_page>div:hover{
+  cursor: pointer;
+  background-color: #292d35;
+  color: white;
+} 
+
+/* footer //////////////////////////////// */
+
+#img1{
+    width: 100%;
+    position: absolute;
+    bottom: 534px;
+}
+footer{
+    
+   
+    
+    height: 504px;
+   
+    width: 100%;
+    /* border: 1px solid red; */
+    background-color: #292d35;
+    display: flex;
+    margin-top: 200px;
+}
+#fixed{
+    /* border: 1px solid red; */
+    width: 1200px;
+    margin: auto;
+    height: 534px;
+    display: flex;
+}
+footer>#fixed>div:first-child{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid teal; */
+    box-sizing: border-box;
+    padding: 80px 59px 83px 54px;
+    margin-left: 50px;
+}
+footer>#fixed>div:first-child>img{
+    cursor: pointer;
+    
+}
+footer>#fixed>div:first-child>p{
+    color: #94979a;
+    font-size: 14px;
+    font-weight: 560;
+    line-height: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#socials{
+    width: 60%;
+    height: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+#socials a{
+    color: white;
+}
+#socials a:hover{
+transition: 1s;    color: #292d35;
+}
+#socials>div{
+    width: 20%;
+    height: 100%;
+    background: #8ec038;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    /* transform: rotate(x); */
+}
+#socials>div:hover{
+transition: 1s;    background: white;
+    color: #292d35;
+}
+footer>#fixed>div:last-child{
+    height: 100%;
+    width: 70%;
+    /* border: 1px solid teal; */
+    z-index: 155;
+    display:flex;
+}
+footer>#fixed>div:last-child>div{
+    height: 100%;
+    width: 30%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding:80px 0px 187px 17px;
+}
+footer>#fixed>div:last-child>div>div{
+    margin-top: 30px;
+}
+footer h2{
+    font-family: 'Fira Sans', sans-serif;
+    color: #8ec038;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+footer h2+ul{
+    color: white;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+footer h2+ul>li:hover{
+transition: 1s;    color: #8ec038;
+    font-size: 13px;
+    cursor: pointer;
+}
+footer h2+ul>li{
+    margin-bottom: 15px;
+}
+.contacts{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.contacts>div{
+    margin-left: 10px;
+    margin-top: -12px;
+    line-height: 15px;
+}
+.contacts>i{
+    color: #8ec038;
+}
+.contacts>i+div>p{
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    font-weight: 100;
+}
+.contacts>i+div>p:hover{
+transition: 1s;    
+    color: #8ec038;
+}
+.contacts>i+div>p:first-child{
+    color: #8ec038;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
+/* navbar/////////////////// */
+
+
+
+    /* navbar edits here */
+    #container>img {
+        /* border: 1px solid red; */
+        width: 90px;
+        height: 46px;
+        margin: 27px 0px 0px 16px;
+        cursor: pointer;
+    }
+
+    #ham_burgur,
+    #ham_burgur>div {
+        display: none;
+        /* border: 1px solid red; */
+    }
+
+    #container {
+        /* border: 1px solid red; */
+        width: 1204px;
+        height: 100%;
+        /* border: 1px dashed black; */
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sidepannel {
+        /* background-color: red; */
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+        /* border: 1px solid red; */
+        /* background-color: #292d35; */
+        position: relative;
+        
+
+    } 
+   
+
+    #sidebar_top {
+        /* border: 1px solid red; */
+        display: none;
+    }
+
+    #sidebar_bottom {
+        /* border: 1px solid black; */
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+    }
+
+    #home {
+        color: #8ec038;
+        font-family: 'Fira Sans', sans-serif;
+
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        width: fit-content;
+        
+        margin-left: 70px;
+    }
+
+    .arrow_mark {
+       
+        margin-left: 2px;
+        margin-top: 2px;
+    }
+
+    #Meal_Plans,
+    #Health_coaching,
+    #Products,
+    #About_Us {
+        font-family: 'Fira Sans', sans-serif;
+        color: #292d35;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 600;
+        width: fit-content;
+      
+        margin-left: 25px;
+        /* padding: 39px 36px 0px 17px; */
+    }
+    .blog{
+   
+        font-family: 'Fira Sans', sans-serif;
+            color: #292d35;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            width: fit-content;
+          
+        
+            margin-left: 25px;
+    }
+
+  
+    #Meal_Plans:hover,
+    #Health_coaching:hover,
+    #Products:hover,
+    .blog:hover,
+    #About_Us:hover,
+    #Meal_Plans:focus,
+    #Health_coaching:focus,
+    #Products:focus,
+    .blog:focus,
+    #About_Us:focus {
+        color: #8ec038;
+        transition: 500ms;
+
+    }
+
+    .arrow {
+        display: flex;
+    }
+
+    #Call {
+        /* border: 1px solid red; */
+        padding: 10px 29px 10px 29px;
+        border-radius: 24px;
+        background-color: #da2424;
+        color: white;
+        font-weight: 700;
+        margin-left: 25px;
+    }
+
+    #Call:hover {
+        background-color: #8ec038;
+        transition: 700ms;
+    }
+
+    #pannel {
+        position: absolute;
+        top: 70px;
+        left: 11px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        transition: 500ms;
+        padding: 0px 0px 0px 0px;
+     display: block;
+        opacity: 0%;
+        height: 20px;
+        overflow: hidden;
+    }
+
+    #arrow1:hover+#pannel,
+    #pannel:hover {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: #140e0e;
+        opacity: 100%;
+        transition: 1s;
+        height: fit-content;
+    }
+
+    #productsdata,#aboutsdata{
+        height: 20px;
+        overflow: hidden;
+    }
+
+    #arrow2:hover+#productsdata,
+    #productsdata:hover {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: #140e0e;
+        opacity: 100%;
+        transition: 1s;
+        height: fit-content;
+    }
+
+    #arrow3:hover+#aboutsdata,
+    #aboutsdata:hover {
+        display: block;
+        background-color: rgb(255, 255, 255);
+        color: #140e0e;
+        opacity: 100%;
+        transition: 500ms;
+        height: fit-content;
+    }
+
+
+
+
+
+
+
+
+
+
+    .accordance_meal>div:first-child {
+        display: none;
+    }
+
+    .accordance_meal>div:last-child {
+        margin: 11px 5px 13px 8px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+/* border: 1px solid red; */
+        border-radius: 25px;
+        padding: 7px 10px 7px 28px;
+    }
+
+    .accordance_meal>div:last-child:hover {
+/* border: 1px solid red; */
+        background-color: #8ec038;
+        transition: 100ms;
+
+    }
+
+    #productsdata {
+        display: block;
+/* border: 1px solid red; */
+        position: absolute;
+        top: 70px;
+        left: 35%;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        transition: 500ms;
+        padding: 0px 0px 0px 0px;
+        opacity: 0%;
+
+
+
+    }
+
+    #productsdata>div {
+        /* padding: 0px 0px 0px 0px;
+        margin: 28px 52px 18px 46px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.7px; */
+
+        margin: 9px 11px 9px 11px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+/* border: 1px solid red; */
+        border-radius: 25px;
+        padding: 4px 29px 6px 38px;
+    }
+   #productsdata>div:hover,#aboutsdata>div:hover{
+    /* border: 1px solid red; */
+    background-color: #8ec038;
+    transition: 100ms;
+   }
+
+
+    #aboutsdata {
+        display: block;
+
+        position: absolute;
+        top: 70px;
+        left: 62%;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        transition: 500ms;
+        padding: 0px 0px 0px 0px;
+        opacity: 0%;
+/* height: fit-content; */
+        
+
+    }
+
+    #aboutsdata>div {
+        /* padding: 0px 0px 0px 0px;
+        margin: 28px 52px 18px 46px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;*/
+        letter-spacing: 0.7px; 
+
+
+        margin: 11px 5px 13px 8px;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.5px;
+/* border: 1px solid red; */
+        border-radius: 25px;
+        padding: 6px 25px 7px 28px;
+
+
+    }
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+#topbar {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+#prv_navbar {
+    width: 50%;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    
+    
+}
+
+#prv_navbar>div {
+    display: flex;
+    /* border: 1px solid red; */
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+
+}
+
+#prv_navbar>div:first-child {
+    margin-right: -50px;
+}
+
+#prv_navbar>div:last-child {
+    margin-left: -180px;
+}
+
+#prv_navbar>div>h6 {
+    font-size: 15px;
+    font-family: Open-Sans, sans-serif;
+    font-weight: 400;
+    color: #292d35;
+    letter-spacing: 0.2px;
+    /* border: 1px solid teal; */
+    cursor: pointer;
+    margin-left: -50px;
+    width: 300px;
+}
+
+#prv_navbar>div>i {
+    /* border: 1px solid black; */
+    /* padding: 20px 9px 20px 9px; */
+    font-size: 19px;
+    color: #80aa38;
+    cursor: pointer; 
+    margin-right: 50px;
+}
+
+#right_navbar {
+    width: 30%;
+    /* border: 1px solid black; */
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #e5e5e5;
+    position: sticky;
+    background-color: white;
+    z-index: 1000;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#container {
+    width: 85%;
+    height: 100%;
+    /* border: 1px dashed black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1204px) {
+
+
+
+    /* navbar starts here */
+
+    #container>img {
+        /* border: 1px solid red; */
+        width: 90px;
+        height: 46px;
+        margin: 27px 0px 0px 16px;
+        cursor: pointer;
+    }
+
+    #container>#ham_burgur {
+        width: 29px;
+        height: auto;
+        margin: 35px 55px;
+        cursor: pointer;
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+
+        cursor: pointer;
+    }
+
+    #container>#ham_burgur>div {
+        background-color: #292d35;
+        width: 29px;
+        height: 2px;
+        cursor: pointer;
+
+    }
+
+    #container>#ham_burgur>#ham_burgur_icon {
+        background-color: #292d35;
+        width: 14px;
+        height: 2px;
+        cursor: pointer;
+        align-self: flex-end;
+        transition: width 1s;
+        margin: 10px 0px 9px 15px;
+    }
+
+    #container>#ham_burgur>#ham_burgur_icon:hover {
+        width: 29px;
+        height: 2px;
+        cursor: pointer;
+        align-self: flex-end;
+        background-color: #80aa38;
+    }
+
+    .big:hover {
+        background-color: #80aa38;
+    }
+
+    #sidepannel {
+        width: 0px;
+       
+        height: 100%;
+       
+        /* border: 1px solid red; */
+        background-color: #292d35;
+        transition: 0.4s;
+     display: none;
+     margin-left: -300px;
+    }
+
+    #sidepannel>#sidebar_top {
+        /* border: 1px solid black; */
+        width: 100%;
+        height: 21%;
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+
+    #sidepannel>#sidebar_top>img {
+        width: 192px;
+        height: 108px;
+        padding: 39px 25px 20px 60px;
+        /* border: 1px solid red; */
+       
+        
+    }
+
+    
+
+    #sidepannel>#sidebar_top>.closebtn {
+        color: white;
+        padding: 35px 42px 23px 29px;
+        font-size: 45px;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    #sidepannel>#sidebar_top>.closebtn:hover {
+        color: #80aa38
+    }
+
+
+    #sidepannel>#sidebar_bottom {
+        border-bottom: 1px solid gray;
+        /* border: 1px solid red; */
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 20px;
+
+
+    }
+
+    #sidepannel>#sidebar_bottom>div {
+        color: white;
+        /* border: 1px solid red; */
+        width: 90%;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;       
+        padding: 7px 0px 8px 20px;
+        border-radius: 25px;
+        text-align: left;
+        margin-top: 7px;
+        cursor: pointer;
+    }
+
+    #sidepannel>#sidebar_bottom>div:hover {
+        color: #80aa38;
+        transition: 0.5s;
+    }
+
+    #sidepannel>#sidebar_bottom>#home:hover {
+        color: #ffffff;
+       background-color: #80aa38;
+        transition: 0.8s;
+    }
+
+    #sidepannel>#sidebar_bottom>#home {
+        background-color: #80aa38;
+
+    }
+
+    #sidepannel>#sidebar_bottom>#pannel:hover {
+        color: #ffffff;
+    }
+    #productsdata,#aboutsdata{
+        display: none;
+    }
+
+    #sidepannel>#sidebar_bottom>#pannel>.accordance:hover {
+        color: #80aa38;
+        transition: 0.5s;
+    }
+
+
+
+    #sidepannel>#sidebar_bottom>.arrow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sidepannel>#sidebar_bottom>.arrow>.arrow_mark {
+        margin-right: 25px;
+    }
+
+    #sidepannel>#sidebar_bottom>#pannel {
+        display: none;
+    }
+    
+    /* 
+meal plane panel  */
+    #pannel>.accordance>.accordance_meal {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #pannel>.accordance>.accordance_meal>div:nth-child(1) {
+        font-weight: 200;
+        margin-right: 9px;
+    }
+
+    #Blog{
+        text-align: start;
+    }
+
+}
+
+/* 
+meal plan panel end */
+
+
+
+/* navbar ends here */
+
+
+   #topbar2{
+       width: 100%;
+       height: 50px;
+       
+       
+     
+       
+   }
+   #topbar2_inner{
+       margin-left: 10%;
+       display: flex;
+   }
+   #topbar2_inner>div{
+       margin-left: 30px;
+       margin-top: 15px;
+   } 
+   #topbar2_inner>div>i{
+       margin-right: 10px;
+       color: #8ec038;
+   }
+   #topbar2_inner2{
+       margin-left: 80%;
+       margin-top: -13px;
+       display: flex;
+       
+   }
+   #topbar2_inner2>div{
+       margin-left: 25px;
+       margin-top: -5px;
+       font-size: 20px;
+   }
+
+
+#home>a{
+  color: #8ec038;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>  
+    <!-- <div id="topbar">
+        <div id="prv_navbar">
+            <div>
+
+                <i class="fa-solid fa-location-dot"></i>
+                <h6>Food delivery only in Hyderabad</h6>
+                <i class="fa-solid fa-phone"></i>
+                <h6> 9100347480</h6>
+                <i class="fa-regular fa-envelope"></i>
+                <h6>fitmealsindia@gmail.com</h6>
+            </div>
+
+            <div id="login">
+                <i class="fa fa-search"></i>  
+                <a href="./signup.html"> <i class="fa-solid fa-user"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-bag-shopping" ></i></a>
+    
+            </div> 
+          </div>
+  
+        
+</div>
+<hr>   -->    
+       
+
+
+    <div id="topbar2">
+        <div id="topbar2_inner">
+        <div><i class="fa-solid fa-location-dot"></i> Food delivery only in Hyderabad </div>
+        <div> <i class="fa-solid fa-phone"></i> 9100347480</div>
+        <div> <i class="fa-regular fa-envelope"></i>fitmealsindia@gmail.com</div>
+    </div>
+        <div id="topbar2_inner2">
+        <div>  <i class="fa fa-search"></i> </div>
+        <div> <a href="./signup.html"> <i class="fa-solid fa-user"></i></a></div>
+        <div><a href="./cart.html"><i class="fa-solid fa-bag-shopping" ></i></a></div>
+         </div>
+    </div>
+
+
+
+
+
+
+<div id="navbar">
+
+  <div id="container">
+
+      <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png">
+
+      <div id="ham_burgur" onclick="openNav()">
+          <div class="big"></div>
+          <div class="big" id="ham_burgur_icon"></div>
+          <div class="big"></div>
+      </div>
+
+      <div id="sidepannel">
+<script>
+//    count=0
+// if(window.matchMedia('(max-width:1209px)').matches && count>0)
+// {
+//     let sidepanel =document.querySelector("#sidepannel")
+//     sidepanel.style.transition = '0.7s'
+//     count++
+//     console.log(count)
+// }
+// if(window.matchMedia('(min-width:1204px)').matches){
+//     count=0
+//     console.log(count)
+// } 
+
+
+</script>
+
+
+          <div id="sidebar_top">
+              <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"
+                  onclick="window.location.href ='index.html'" alt="">
+              <a class="closebtn" onclick="closeNav()">×</a> 
+          </div>
+          <div id="sidebar_bottom">
+
+              <div id="home"><a href="../index.html">Home</a></div>
+              <div class="arrow" id="arrow1" id="no1">
+                  <div id="Meal_Plans">Meal Plans</div>
+                  <div class="arrow_mark">></div>
+              </div>
+
+              <div id="pannel">
+                  <div class="accordance">
+                      <div class="accordance_meal">
+                          <div>></div>
+                          <div  onclick="window.location.href='./weightloss.html'">Weight Loss Meal Plan</div>
+                      </div>
+                  </div>
+                  <div class="accordance">
+                      <div class="accordance_meal">
+                          <div>></div>
+                          <div>Maintain Meal Plan</div>
+
+                      </div>
+                  </div>
+                  <div class="accordance">
+                      <div class="accordance_meal">
+                          <div>></div>
+                          <div> Athletic Meal Plan</div>
+
+                      </div>
+                  </div>
+                  <div class="accordance">
+                      <div class="accordance_meal">
+                          <div>></div>
+                          <div>Keto Meal Plan</div>
+
+                      </div>
+                  </div>
+                  <div class="accordance">
+                      <div class="accordance_meal">
+                          <div>></div>
+                          <div>Transformation challenges</div>
+
+                      </div>
+                  </div>
+              </div>
+
+
+
+              <div id="Health_coaching" onclick=""><a href="./healthcoaching.html">Health Coaching</a></div>
+
+              <div class="arrow" id="arrow2" id="no1">
+                  <div id="Products">Products</div>
+                  <div class="arrow_mark">></div>
+
+              </div>
+              <div id="productsdata">
+                  <div><a href="./products.html">Veg Sweets</a></div>
+                  <div>Low Cal Sauces</div>
+                  <div>Nut Butter</div>
+                  <div>Fresh Bekes</div>
+              </div>
+
+
+
+
+              <div id="Bog" class="blog"  ><a href="./blog.html">Blog</a></div>
+              <div class="arrow" id="arrow3" id="no1">
+
+                  <div id="About_Us" >About Us</div>
+                  <div class="arrow_mark">></div>
+              </div>
+              <div id="aboutsdata">
+                 
+                  <div>Ours Story</div>
+                  <div>FAQ</div>
+                  <div>Testimonials</div>
+              </div>
+
+              <div id="Call">Call: 9100347480</div>
+              <hr>
+          </div>
+      </div>
+
+  </div>
+
+</div>
+<!-- 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="product_head"> 
+        <h1> Products</h1>
+    </div>   
+     <div id="outer_sortdiv">
+     <div id="inputs"><input type="text" placeholder="Search" id="input" ><button type="submit" id="submit"><i class="fa fa-search"></i></button> </div> 
+     
+    
+    <div id="sortdiv">
+      <div id="div"><h1>Showing 1–6 of 24 results</h1></div> 
+      <div id="sort"><select id="sorting" onchange="sort_fun()" > 
+        <option>Default sorting</option>
+        <option  value="lth">sort by price: low to high</option>
+        <option  value="htl">sort by price: high to low</option>
+        <option>Sort by popularity</option>
+        <option>sort by average rating</option>
+        <option>sort by latest</option>
+      </select></div>
+    </div> 
+  </div>
+    
+    <div id="mainbox">
+    <div id="side_box"> 
+      <h1> Product categories</h1>
+      <div id="line"></div>
+      <i class="fas fa-angle-right dropdown"></i> <a href="">Diet Plans</a> <br> <hr>
+      
+      <i class="fas fa-angle-right dropdown"></i>  <a href="">Meal Plans</a><br> <hr>
+      <i class="fas fa-angle-right dropdown"></i> <a href="">Products</a> <br> <hr>
+      
+        <i  class="fas fa-angle-right dropdown fast"></i>  <a class="side" href="">Dishes</a><br> <hr>
+        <i   class="fas fa-angle-right dropdown  fast"></i> <a class="side" href="">Fresh Bakes</a><br> <hr>
+        <i  class="fas fa-angle-right dropdown  fast"></i>  <a class="side" href="">Low Calorie Sauces</a><br> <hr>
+        <i  class="fas fa-angle-right dropdown  fast"></i>  <a class="side" href="">Nut Butters</a><br><hr>
+        <i  class="fas fa-angle-right dropdown  fast "></i>  <a class="side" href="">Vegan Sweets</a> <br><hr>
+    </div>
+  
+      
+
+    <div id="products"></div> 
+   
+  </div> 
+
+  <div id="diff_page">
+    <div style="background-color:#80aa38">1</div>
+    <div ><a href="./secondprodpage.html">2</a></div>
+    <div>3</div>
+    <div>4</div> 
+    <div><i class="fas fa-angle-right dropdown"></i></div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div id="fixed">
+        <div>
+            <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" />
+            <p>
+                The Fitmeals culinary team consists of very passionate and skilled chefs.
+                Our team is well versed in nutrition and all our menus and plans are designed
+                by qualified nutrition experts.
+            </p>
+            <div id="socials">
+                <div>
+                    <a href="https://twitter.com/fitmealsindia" target="blank">
+                        <i id="twitter" class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/fitmealsindia/?fref=ts" target="blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/fitmealsindia/" target="blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Meals</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Links</h2>
+                <ul>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>FAQ</li>
+                    <li>Testimonials</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Contacts</h2>
+                <div class="contacts">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <p>Call Us :</p>
+                        <p>9100347480</p>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <i class="fa-regular fa-envelope"></i>
+                    <div>
+                        <p>Email Us :</p>
+                        <p>fitmealsindia@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <div>
+                        <p>Our Location</p>
+                        <p>Banjara Hills, Road no.5, Hyderabad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+</body>
+</html>  
+<script>   
+
+
+ 
+
+  let Product_data=[ 
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/05/1-550x550.jpg",
+      product_name:"Almond Butter",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "800.00"  
+
+    },
+
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/25-550x550.jpg",
+      product_name:"Almond Date Chocolate",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "1200.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/arrabbiata-sauce-680x900-1-550x550.jpg",
+      product_name:"Arrabiata Sauce",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "220.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/12-550x550.jpg",
+      product_name:"BBQ Sauce",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "250.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/05/2-550x550.jpg",
+      product_name:"Cacao Spread",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "800.00"  
+
+    },
+    {
+      imgurl: "https://www.fitmeals.co.in/wp-content/uploads/2021/06/23-550x550.jpg",
+      product_name:"Coco Rush",
+      discription:"Delectable almond butter prepared in-house, serves as the perfect guilt-free accompaniment with your healthy ...",
+      price: "550.00"  
+
+    }
+
+
+
+
+
+
+
+
+  ]   
+    
+
+      //  function showdata(Product_data){ 
+  Product_data.map(function( Product_data){ 
+
+    let box=document.querySelector("#products")
+      
+    let div=document.createElement("div")
+       div.setAttribute("id","prod_div")
+      let image=document.createElement("img")
+      image.src= Product_data.imgurl 
+      image.setAttribute("id" ,"product_image")
+
+      let prodName=document.createElement("h2")
+      prodName.innerText= Product_data.product_name
+
+      let discrip= document.createElement("p")
+      discrip.innerText=Product_data.discription 
+
+      let price=document.createElement("h3") 
+      price.innerText= Product_data.price   
+
+      let reddiv=document.createElement("div")
+      reddiv.innerHTML="Select Option" 
+      reddiv.setAttribute("id","reddiv") 
+      reddiv.addEventListener("click",function(){
+        myfun(Product_data)
+      })
+       
+      
+
+      let read=document.createElement("h4")
+      read.innerText="Read more" 
+      read.setAttribute("id","Read_more")
+
+
+      div.append(image,prodName,discrip,price,reddiv,read) 
+      
+      box.append(div)
+
+
+
+
+
+  })   
+// }
+
+
+
+  
+
+  function  myfun(Product_data){  
+    
+       localStorage.setItem("selected",JSON.stringify(Product_data));
+
+  window.location.href="prodAddToBag.html" 
+  }
+
+
+
+ 
+
+  function sort_fun(){
+        var selected = document.querySelector("#sorting").value;
+        console.log(selected);
+        if (selected == "htl") {
+          Product_data.sort(function (a, b) {
+            return b.price - a.price;
+          });
+          showdata(Product_data);
+        }
+
+         if (selected == "lth") {
+          Product_data.sort(function (a, b) {
+            return a.price - b.price;
+        });
+          showdata(Product_data);
+         }
+      }
+
+
+
+
+
+</script>
+

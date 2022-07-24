@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletic Meal Plan </title>
+    <link rel="icon" href="https://www.fitmeals.co.in/wp-content/uploads/2019/06/icon.png">
+    <link rel="stylesheet" href="../style/athleticplan.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+
+
+
+    <!--   this is navbar -->
+
+    <div id="topbar">
+      <div id="prv_navbar">
+          <div>
+
+              <i class="fa-solid fa-location-dot"></i>
+              <h6>Food delivery only in Hyderabad</h6>
+              <i class="fa-solid fa-phone"></i>
+              <h6> 9100347480</h6>
+              <i class="fa-regular fa-envelope"></i>
+              <h6>fitmealsindia@gmail.com</h6>
+          </div>
+          <div id="login">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <i class="fa-solid fa-user" onclick="window.location.href=`./html/signup.html`"></i>
+              <i class="fa-solid fa-bag-shopping" onclick="window.location.href=`./html/cart.html`"></i>
+
+          </div>
+      </div>
+  </div>
+
+  <!-- navbar starts here -->
+  <div id="navbar">
+
+      <div id="container">
+
+          <img src="//www.fitmeals.co.in/wp-content/uploads/2019/06/logo-black.png"
+              onclick="window.location.href ='../index.html'" alt="">
+
+          <div id="ham_burgur" onclick="openNav()">
+              <div class="big"></div>
+              <div class="big" id="ham_burgur_icon"></div>
+              <div class="big"></div>
+          </div>
+
+          <div id="sidepannel">
+              <script>
+//    count=0
+// if(window.matchMedia('(max-width:1209px)').matches && count>0)
+// {
+//     let sidepanel =document.querySelector("#sidepannel")
+//     sidepanel.style.transition = '0.7s'
+//     count++
+//     console.log(count)
+// }
+// if(window.matchMedia('(min-width:1204px)').matches){
+//     count=0
+//     console.log(count)
+// } 
+
+
+              </script>
+
+
+              <div id="sidebar_top">
+                  <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png"
+                      onclick="window.location.href ='index.html'" alt="">
+                  <a class="closebtn" onclick="closeNav()">×</a>
+              </div>
+              <div id="sidebar_bottom">
+
+                  <div id="home" onclick="window.location.href='../index.html'">Home</div>
+                  <div class="arrow" id="arrow1" id="no1">
+                      <div id="Meal_Plans">Meal Plans</div>
+                      <div class="arrow_mark">></div>
+                  </div>
+
+                  <div id="pannel">
+                      <div class="accordance">
+                          <div class="accordance_meal">
+                              <div>></div>
+                              <div onclick="window.location.href='../html/weightloss.html'">Weight Loss Meal Plan</div>
+
+                          </div>
+                      </div>
+                      <div class="accordance">
+                          <div class="accordance_meal">
+                              <div>></div>
+                              <div onclick="window.location.href='../html/maintenance.html'">Maintenance Meal Plan</div>
+
+                          </div>
+                      </div>
+                      <div class="accordance">
+                          <div class="accordance_meal" onclick="window.location.href='../html/athleticplan.html'">
+                              <div>></div>
+                              <div> Athletic Meal Plan</div>
+
+                          </div>
+                      </div>
+                      <div class="accordance">
+                          <div class="accordance_meal" onclick="window.location.href='../html/keto.html'">
+                              <div>></div>
+                              <div>Keto Meal Plan</div>
+
+                          </div>
+                      </div>
+                      <div class="accordance">
+                          <div class="accordance_meal">
+                              <div>></div>
+                              <div>Transformation challenges</div>
+
+                          </div>
+                      </div>
+                  </div>
+
+
+
+                  <div id="Health_coaching" onclick="window.location.href='../html/healthcoaching.html'">Health
+                      coaching</div>
+
+                  <div class="arrow" id="arrow2" id="no1">
+                      <div id="Products" onclick="window.location.href='../html/products.html'">Products</div>
+                      <div class="arrow_mark">></div>
+
+                  </div>
+                  <div id="productsdata">
+                      <div>Veg Sweets</div>
+                      <div>Low Cal Sauces</div>
+                      <div>Nut Butter</div>
+                      <div>Fresh Bekes</div>
+                  </div>
+
+
+
+
+                  <div id="Bog" onclick="window.location.href='blog.html'" class="blog">Blog</div>
+                  <div class="arrow" id="arrow3" id="no1">
+
+                      <div id="About_Us" onclick="window.location.href='about.html'">About Us</div>
+                      <div class="arrow_mark">></div>
+                  </div>
+                  <div id="aboutsdata">
+
+                      <div>Ours Story</div>
+                      <div>FAQ</div>
+                      <div>Testimonials</div>
+                  </div>
+
+                  <div id="Call">Call: 9100347480</div>
+                  <hr>
+              </div>
+          </div>
+
+      </div>
+
+  </div>
+
+
+
+
+
+
+
+
+    <div class="image-container">
+      <h1>Athletic Plan</h1>
+    </div>
+    <div class="body-container">
+      <div>
+        <div>
+          <p>
+            A diet rich in protein is essential for promoting muscle 
+            growth and repair while simultaneously burning fat to ensure 
+            you stay in shape. This plan includes high protein meals for 
+            individuals who want to gain weight or build muscle. If you are
+            a fitness enthusiast who’s looking for meals higher in calories 
+            and lean protein then we’ve got you covered.
+          </p>
+
+          <button>View Sample Menu</button>
+        </div>
+        <div>
+          <h2>What our meals look like:</h2>
+          <div class="carousel">
+            <button class="carousel_button carousel_button--left is-hidden">
+              <img
+                src="https://img9.hkrtcdn.com/react/static/media/common/misc/home-slider-left-v2.svg"
+                alt="1"
+              />
+            </button>
+            <div class="carousel_track-container">
+              <ul class="carousel_track">
+                <li class="carousel_slide current-slide">
+                  <img
+                    class="carousel_image"
+                    src="https://www.fitmeals.co.in/wp-content/uploads/2019/10/DSC02724-1024x685.jpg"
+                    alt="1"
+                  />
+                </li>
+                <li class="carousel_slide">
+                  <img
+                    class="carousel_image"
+                    src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/DSC02782-1-1024x684.jpg"
+                    alt="2"
+                  />
+                </li>
+                <li class="carousel_slide">
+                  <img
+                    class="carousel_image"
+                    src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/keto.jpg"
+                    alt="3"
+                  />
+                </li>
+                <li class="carousel_slide">
+                  <img
+                    class="carousel_image"
+                    src="https://www.fitmeals.co.in/wp-content/uploads/2021/05/maintenance.jpg"
+                    alt="3"
+                  />
+                </li>
+              </ul>
+            </div>
+            <button class="carousel_button carousel_button--right">
+              <img
+                src="https://img9.hkrtcdn.com/react/static/media/common/misc/home-slider-right-v2.svg"
+                alt="2"
+              />
+            </button>
+    
+            <div class="carousel_nav">
+              <button class="carousel_indicator 1 current-slide"></button>
+              <button class="carousel_indicator 2"></button>
+              <button class="carousel_indicator 3"></button>
+              <button class="carousel_indicator"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="body-container2">
+      <h1>How Does It Work?</h1>
+      <div>
+        <div class="items">
+          <div class="flipper">
+            <img src="../svg/calories-calculator.png" alt="" />
+          </div>
+          <h3>Select your plan</h3>
+          <p>Choose the meal plan you want based on your preferences.</p>
+        </div>
+        <div class="items">
+          <div class="flipper">
+            <img src="../svg/checked-user-male.png" alt="" />
+          </div>
+          <h3>Nutrition Support</h3>
+          <p>
+            Our nutritionists will design your meals & will be available for
+            further consultations.
+          </p>
+        </div>
+        <div class="items">
+          <div class="flipper">
+            <img src="../svg/icons8-scooter-64.png" alt="" />
+          </div>
+          <h3>Home delivery</h3>
+          <p>
+            Freshly prepared, hot meals will be delivered right at your
+            doorstep.
+          </p>
+        </div>
+        <div class="items">
+          <div class="flipper">
+            <img src="../svg/icons8-take-away-food-100.png" alt="" />
+          </div>
+          <h3>Enjoy your meal</h3>
+          <p>Microwave the food if needed then dig in!</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="body-container3">
+      <div class="body-container3-heading">
+        <h1>Choose your</h1>
+        <h1>ideal program</h1>
+        <h1>&</h1>
+        <h1>get started!</h1>
+      </div>
+    
+      <div class="body-container3-items">
+        <h3><span>1 week </span> Plan</h3>
+        <div>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Freshly prepared
+            meals
+          </p>
+          <p><img src="./svg/icons8-tick-24.png" alt="" /> Home delivery</p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> No refined sugars
+          </p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Planned by
+            nutritionists
+          </p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Plan flexibility
+          </p>
+        </div>
+        <button>Order Now</button>
+      </div>
+      <div class="body-container3-items">
+        <h3><span>2 weeks </span> Plan</h3>
+        <div>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Freshly prepared
+            meals
+          </p>
+          <p><img src="./svg/icons8-tick-24.png" alt="" /> Home delivery</p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> No refined sugars
+          </p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Planned by
+            nutritionists
+          </p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Plan flexibility
+          </p>
+        </div>
+        <button>Order Now</button>
+      </div>
+      <div class="body-container3-items">
+        <h3><span>4 weeks </span> Plan</h3>
+        <div>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Freshly prepared
+            meals
+          </p>
+          <p><img src="./svg/icons8-tick-24.png" alt="" /> Home delivery</p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> No refined sugars
+          </p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Planned by
+            nutritionists
+          </p>
+          <p>
+            <img src="./svg/icons8-tick-24.png" alt="" /> Plan flexibility
+          </p>
+        </div>
+        <button>Order Now</button>
+      </div>
+    </div>
+    <div class="slideshow-container">
+        <h1>Muscle Diaries</h1>
+        <div class="slideshow"></div>
+      </div>
+      <img id="img1" src="../svg/Screenshot 2022-05-04 161015.png" />
+    <footer>
+        <div id="fixed">
+            <div>
+                <img src="https://www.fitmeals.co.in/wp-content/uploads/2019/06/logo-white.png" />
+                <p>
+                    The Fitmeals culinary team consists of very passionate and skilled chefs.
+                    Our team is well versed in nutrition and all our menus and plans are designed
+                    by qualified nutrition experts.
+                </p>
+                <div id="socials">
+                    <div>
+                        <a href="https://twitter.com/fitmealsindia" target="blank">
+                            <i id="twitter" class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/fitmealsindia/?fref=ts" target="blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.instagram.com/fitmealsindia/" target="blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Meals</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Links</h2>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Blog</li>
+                        <li>FAQ</li>
+                        <li>Testimonials</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Contacts</h2>
+                    <div class="contacts">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <p>Call Us :</p>
+                            <p>9100347480</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <i class="fa-regular fa-envelope"></i>
+                        <div>
+                            <p>Email Us :</p>
+                            <p>fitmealsindia@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <div>
+                            <p>Our Location</p>
+                            <p>Banjara Hills, Road no.5, Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+<script src="../src/athleticplan.js"></script>
